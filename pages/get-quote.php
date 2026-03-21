@@ -40,7 +40,7 @@ $services_list = !empty($clean_services)
 |--------------------------------------------------------------------------
 */
 
-$to_email   = "jr.carlos.arcm@gmail.com";
+$to_email   = "Loggin777.rs3@gmail.com";
 $from_email = "no_repoly@rb-pinestrawlandscapingllc.com";
 $from_name  = "R&B Pine Straw Landscaping Website";
 
