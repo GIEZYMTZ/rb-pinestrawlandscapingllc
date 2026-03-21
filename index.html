@@ -1,12 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola mundo</title>
-</head>
-<body>
-    <h1>Hola, mundo!</h1>
-    <p>Funciona correctamente?</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Landscaping & Outdoor Care Services in Rockingham, NC | R&B Pine Straw
+      Landscaping
+    </title>
+
+    <meta
+      name="description"
+      content="R&B Pine Straw Landscaping provides professional outdoor care services in Rockingham, NC, including pine straw, tree trimming, pruning, stump grinding, landscape design, power washing, gutter cleaning, mulch installation, and regular maintenance. Contact us today for a free estimate."
+    />
+
+    <meta
+      name="keywords"
+      content="landscaping Rockingham NC, pine straw Rockingham NC, tree trimming Rockingham NC, pruning services Rockingham NC, stump grinding Rockingham NC, landscape design Rockingham NC, power washing Rockingham NC, gutter cleaning Rockingham NC, mulch installation Rockingham NC, outdoor maintenance Rockingham NC"
+    />
+
+    <meta name="author" content="R&B Pine Straw Landscaping" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://rb-pinestrawlandscapingllc.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Landscaping & Outdoor Care Services in Rockingham, NC | R&B Pine Straw Landscaping"
+    />
+    <meta
+      property="og:description"
+      content="Professional outdoor care services in Rockingham, NC, including pine straw, tree trimming, pruning, stump grinding, landscape design, power washing, gutter cleaning, mulch installation, and regular maintenance."
+    />
+    <meta property="og:url" content="https://rb-pinestrawlandscapingllc.com/" />
+    <meta
+      property="og:image"
+      content="https://rb-pinestrawlandscapingllc.com/images/logo.webp"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Landscaping & Outdoor Care Services in Rockingham, NC | R&B Pine Straw Landscaping"
+    />
+    <meta
+      name="twitter:description"
+      content="Professional outdoor care services in Rockingham, NC, including pine straw, tree trimming, pruning, stump grinding, landscape design, power washing, gutter cleaning, mulch installation, and regular maintenance."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rb-pinestrawlandscapingllc.com/images/logo.webp"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/mobile_menu.js" defer></script>
+    <script src="js/hero_slider.js" defer></script>
+    <link rel="icon" href="./images/icono.png" type="image/x-icon">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <img
+            src="./images/Logo sin fondo.png"
+            alt="R&B Pine Straw Landscaping"
+          />
+        </a>
+
+        <!-- Desktop links -->
+        <nav class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- CTA -->
+        <a href="#contact" class="cta-btn">Get a Quote</a>
+
+        <!-- Mobile button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="mobile-cta">Get a Quote</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-slider">
+          <div
+            class="hero-slide active"
+            style="background-image: url(&quot;./images/hero-1.jpeg&quot;)"
+          ></div>
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;./images/hero-2.jpeg&quot;)"
+          ></div>
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;./images/hero-3.jpeg&quot;)"
+          ></div>
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <p class="hero-kicker">Professional Outdoor Property Care</p>
+
+          <h1>
+            Pine Straw Installation
+            <span>& Landscaping Services</span>
+          </h1>
+
+          <p class="hero-description">
+            Clean, reliable work that helps your property look fresh,
+            well-maintained, and professionally cared for.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="hero-btn hero-btn-primary">Get a Quote</a>
+            <a href="#services" class="hero-btn hero-btn-secondary"
+              >View Work</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-dots">
+          <button
+            class="hero-dot active"
+            data-slide="0"
+            aria-label="Show slide 1"
+          ></button>
+          <button
+            class="hero-dot"
+            data-slide="1"
+            aria-label="Show slide 2"
+          ></button>
+          <button
+            class="hero-dot"
+            data-slide="2"
+            aria-label="Show slide 3"
+          ></button>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </body>
 </html>
