@@ -59,10 +59,15 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="js/mobile_menu.js" defer></script>
-    <script src="js/hero_slider.js" defer></script>
-    <script src="js/reviews_slider.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css?v=4" />
+    <script src="js/mobile_menu.js?v=4" defer></script>
+    <script src="js/hero_slider.js?v=4" defer></script>
+    <script src="js/reviews_slider.js?v=4" defer></script>
+    <script src="js/i18n.js?v=4" defer></script>
     <link rel="icon" href="./images/icono.png" type="image/x-icon" />
   </head>
   <body>
@@ -78,14 +83,26 @@
 
         <!-- Desktop links -->
         <nav class="nav-links">
-          <a href="#services">Services</a>
-          <a href="#reviews">Why Choose Us</a>
-          <a href="#service-area">Service Area</a>
-          <a href="#contact">Contact</a>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#reviews" data-i18n="nav.whyChooseUs">Why Choose Us</a>
+          <a href="#service-area" data-i18n="nav.serviceArea">Service Area</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
 
-        <!-- CTA -->
-        <a href="#contact" class="cta-btn">Get a Quote</a>
+        <div class="nav-actions">
+          <button
+            class="lang-toggle"
+            id="langToggle"
+            type="button"
+            aria-label="Change language"
+            title="Change language"
+          >
+            <span class="fi fi-mx" id="langToggleIcon"></span>
+            <span class="lang-toggle-text" id="langToggleText">ES</span>
+          </button>
+
+          <a href="#contact" class="cta-btn" data-i18n="nav.cta">Get a Quote</a>
+        </div>
 
         <!-- Mobile button -->
         <button class="menu-toggle" id="menuToggle">
@@ -99,6 +116,18 @@
         <a href="#reviews">Why Choose Us</a>
         <a href="#service-area">Service Area</a>
         <a href="#contact">Contact</a>
+        <div class="mobile-language">
+          <button
+            class="lang-toggle mobile-lang-toggle"
+            id="mobileLangToggle"
+            type="button"
+            aria-label="Change language"
+            title="Change language"
+          >
+            <span class="fi fi-mx" id="mobileLangToggleIcon"></span>
+            <span class="lang-toggle-text" id="mobileLangToggleText">ES</span>
+          </button>
+        </div>
         <a href="#contact" class="mobile-cta">Get a Quote</a>
       </div>
     </header>
