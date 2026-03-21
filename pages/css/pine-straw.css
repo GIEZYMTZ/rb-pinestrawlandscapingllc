@@ -629,6 +629,10 @@ img {
   .service-detail-container {
     grid-template-columns: 1fr;
   }
+
+  .nav-actions {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
