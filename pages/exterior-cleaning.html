@@ -21,14 +21,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
     />
-    <link rel="stylesheet" href="./css/exterior-cleaning.css" />
-    <script src="../js/mobile_menu.js" defer></script>
+    <link rel="stylesheet" href="./css/exterior-cleaning.css?v=5" />
+    <script src="../js/mobile_menu.js?v=5" defer></script>
+    <script src="../js/i18n.js?v=5" defer></script>
     <link rel="icon" href="../images/icono.png" type="image/png" />
   </head>
   <body>
     <!-- NAVBAR -->
     <header class="navbar">
       <div class="nav-container">
+        <!-- Logo -->
         <a href="../index.html" class="logo">
           <img
             src="../images/Logo sin fondo.png"
@@ -36,26 +38,54 @@
           />
         </a>
 
+        <!-- Desktop links -->
         <nav class="nav-links">
-          <a href="../index.html#services">Services</a>
-          <a href="../index.html#reviews">Why Choose Us</a>
-          <a href="../index.html#service-area">Service Area</a>
-          <a href="../index.html#contact">Contact</a>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#reviews" data-i18n="nav.whyChooseUs">Why Choose Us</a>
+          <a href="#service-area" data-i18n="nav.serviceArea">Service Area</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
 
-        <a href="../index.html#contact" class="cta-btn">Get a Quote</a>
+        <div class="nav-actions">
+          <button
+            class="lang-toggle"
+            id="langToggle"
+            type="button"
+            aria-label="Change language"
+            title="Change language"
+          >
+            <span class="fi fi-mx" id="langToggleIcon"></span>
+            <span class="lang-toggle-text" id="langToggleText">ES</span>
+          </button>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <a href="#contact" class="cta-btn" data-i18n="nav.cta">Get a Quote</a>
+        </div>
+
+        <!-- Mobile button -->
+        <button class="menu-toggle" id="menuToggle">
           <i data-lucide="menu"></i>
         </button>
       </div>
 
+      <!-- Mobile menu -->
       <div class="mobile-menu" id="mobileMenu">
-        <a href="../index.html#services">Services</a>
-        <a href="../index.html#reviews">Why Choose Us</a>
-        <a href="../index.html#service-area">Service Area</a>
-        <a href="../index.html#contact">Contact</a>
-        <a href="../index.html#contact" class="mobile-cta">Get a Quote</a>
+        <a href="#services">Services</a>
+        <a href="#reviews">Why Choose Us</a>
+        <a href="#service-area">Service Area</a>
+        <a href="#contact">Contact</a>
+        <div class="mobile-language">
+          <button
+            class="lang-toggle mobile-lang-toggle"
+            id="mobileLangToggle"
+            type="button"
+            aria-label="Change language"
+            title="Change language"
+          >
+            <span class="fi fi-mx" id="mobileLangToggleIcon"></span>
+            <span class="lang-toggle-text" id="mobileLangToggleText">ES</span>
+          </button>
+        </div>
+        <a href="#contact" class="mobile-cta">Get a Quote</a>
       </div>
     </header>
 
@@ -63,9 +93,9 @@
       <!-- HERO -->
       <section class="service-hero cleaning-hero">
         <div class="service-hero-content">
-          <p class="service-kicker">Our Services</p>
-          <h1>Exterior Cleaning</h1>
-          <p class="service-hero-description">
+          <p class="service-kicker" data-i18n="cleaning.phill">Our Services</p>
+          <h1 data-i18n="cleaning.title">Exterior Cleaning</h1>
+          <p class="service-hero-description" data-i18n="cleaning.heroDescription">
             Exterior cleaning services that refresh, protect, and maintain the
             look of your property.
           </p>
@@ -76,17 +106,17 @@
       <section class="service-detail">
         <div class="service-detail-container">
           <div class="service-detail-text">
-            <p class="service-section-kicker">What We Offer</p>
-            <h2>
+            <p class="service-section-kicker" data-i18n="cleaning.whatWeOffer">What We Offer</p>
+            <h2 data-i18n="cleaning.detailTitle">
               Clean, Restored Surfaces That Make Your Property Look New Again
             </h2>
-            <p>
+            <p data-i18n="cleaning.detailP1">
               Our exterior cleaning services are designed to remove dirt,
               buildup, and stains that affect the appearance of your property.
               Clean surfaces not only improve curb appeal but also help maintain
               and protect your home over time.
             </p>
-            <p>
+            <p data-i18n="cleaning.detailP2">
               From power washing to gutter cleaning, we provide reliable outdoor
               cleaning solutions that leave your property looking refreshed,
               well-maintained, and professionally cared for.
@@ -94,12 +124,12 @@
           </div>
 
           <div class="service-detail-card">
-            <h3>Included in this service</h3>
+            <h3 data-i18n="cleaning.includesTitle">Included in this service</h3>
             <ul>
-              <li>Power washing for outdoor surfaces</li>
-              <li>Gutter cleaning and debris removal</li>
-              <li>Exterior surface cleaning and refresh</li>
-              <li>Professional, detail-focused results</li>
+              <li data-i18n="cleaning.item1">Power washing for outdoor surfaces</li>
+              <li data-i18n="cleaning.item2">Gutter cleaning and debris removal</li>
+              <li data-i18n="cleaning.item3">Exterior surface cleaning and refresh</li>
+              <li data-i18n="cleaning.item4">Professional, detail-focused results</li>
             </ul>
           </div>
         </div>
@@ -109,9 +139,9 @@
       <section class="service-gallery">
         <div class="service-gallery-container">
           <div class="service-gallery-heading">
-            <p class="service-section-kicker">Gallery</p>
-            <h2>Recent Cleaning Work</h2>
-            <p>
+            <p class="service-section-kicker" data-i18n="cleaning.gallery">Gallery</p>
+            <h2 data-i18n="cleaning.galleryTitle">Recent Cleaning Work</h2>
+            <p data-i18n="cleaning.galleryDescription">
               Outdoor cleaning work that restores surfaces and improves the
               overall look of your property.
             </p>
@@ -173,13 +203,15 @@
       <!-- CTA -->
       <section class="service-cta">
         <div class="service-cta-container">
-          <p class="service-section-kicker">Need a Quote?</p>
-          <h2>Let’s Refresh Your Property</h2>
-          <p>
+          <p class="service-section-kicker" data-i18n="cleaning.ctaBadge">Need a Quote?</p>
+          <h2 data-i18n="cleaning.ctaTitle">Let’s Refresh Your Property</h2>
+          <p data-i18n="cleaning.ctaDescription">
             Call today to get a straightforward quote for exterior cleaning and
             professional outdoor care.
           </p>
-          <a href="tel:+14342654714" class="service-cta-btn">Call Now</a>
+          <a href="tel:+14342654714" class="service-cta-btn" data-i18n="cleaning.ctaButton">
+            Call Now
+          </a>
         </div>
       </section>
     </main>
@@ -194,24 +226,26 @@
                 alt="R&B Pine Straw Landscaping"
               />
             </a>
-            <p class="footer-description">
+            <p class="footer-description" data-i18n="footer.description">
               Professional pine straw installation and outdoor property care for
               homeowners across Central North Carolina.
             </p>
           </div>
 
           <div class="footer-links-group">
-            <h3>Quick Links</h3>
+            <h3 data-i18n="footer.quickLinks">Quick Links</h3>
             <nav class="footer-links">
-              <a href="../index.html#services">Services</a>
-              <a href="../index.html#reviews">Why Choose Us</a>
-              <a href="../index.html#service-area">Service Area</a>
-              <a href="../index.html#contact">Contact</a>
+              <a href="#services" data-i18n="nav.services">Services</a>
+              <a href="#reviews" data-i18n="nav.whyChooseUs">Why Choose Us</a>
+              <a href="#service-area" data-i18n="nav.serviceArea"
+                >Service Area</a
+              >
+              <a href="#contact" data-i18n="nav.contact">Contact</a>
             </nav>
           </div>
 
           <div class="footer-contact">
-            <h3>Contact</h3>
+            <h3 data-i18n="footer.contact">Contact</h3>
             <a href="tel:+14342654714" class="footer-phone"
               >+1 (434) 265-4714</a
             >
@@ -220,7 +254,9 @@
         </div>
 
         <div class="footer-bottom">
-          <p>© 2026 R&B Pine Straw Landscaping. All rights reserved.</p>
+          <p data-i18n="footer.rights">
+            © 2026 R&B Pine Straw Landscaping. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
