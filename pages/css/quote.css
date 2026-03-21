@@ -761,6 +761,28 @@ img {
   letter-spacing: 0.5px;
 }
 
+.form-alert {
+  margin-bottom: 1rem;
+  padding: 0.95rem 1rem;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.form-alert-success {
+  background: hsla(104, 64%, 90%, 0.7);
+  border-color: hsla(104, 64%, 35%, 0.25);
+  color: var(--primary-600);
+}
+
+.form-alert-error {
+  background: hsla(0, 75%, 96%, 1);
+  border-color: hsla(0, 65%, 70%, 0.35);
+  color: hsl(0, 55%, 38%);
+}
+
 /* =========================================================
    RESPONSIVE - NAVBAR / MOBILE MENU
 ========================================================= */
