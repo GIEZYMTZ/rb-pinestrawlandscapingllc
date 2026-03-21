@@ -62,6 +62,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="js/mobile_menu.js" defer></script>
     <script src="js/hero_slider.js" defer></script>
+    <script src="js/reviews_slider.js" defer></script>
     <link rel="icon" href="./images/icono.png" type="image/x-icon" />
   </head>
   <body>
@@ -78,7 +79,8 @@
         <!-- Desktop links -->
         <nav class="nav-links">
           <a href="#services">Services</a>
-          <a href="#about">About Us</a>
+          <a href="#reviews">Why Choose Us</a>
+          <a href="#service-area">Service Area</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -94,7 +96,8 @@
       <!-- Mobile menu -->
       <div class="mobile-menu" id="mobileMenu">
         <a href="#services">Services</a>
-        <a href="#about">About Us</a>
+        <a href="#reviews">Why Choose Us</a>
+        <a href="#service-area">Service Area</a>
         <a href="#contact">Contact</a>
         <a href="#contact" class="mobile-cta">Get a Quote</a>
       </div>
@@ -161,7 +164,322 @@
           ></button>
         </div>
       </section>
+      <section class="services" id="services">
+        <div class="services-container">
+          <div class="services-heading">
+            <p class="services-kicker">Our Services</p>
+            <h2>Outdoor Services Backed by Real Work</h2>
+            <p class="services-intro">
+              Explore our core services and see the type of outdoor work we
+              provide across Central North Carolina.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <a href="/pages/pine-straw.html" class="service-card">
+              <div class="service-image-wrapper">
+                <img
+                  src="./images/service-pine-straw.jpeg"
+                  alt="Pine Straw Installation"
+                />
+              </div>
+              <div class="service-card-content">
+                <h3>Pine Straw Installation</h3>
+                <p>
+                  Premium pine straw installation that gives your landscape a
+                  clean, natural, and well-maintained look.
+                </p>
+                <span class="service-link">View Service</span>
+              </div>
+            </a>
+
+            <a href="/pages/landscaping-design.html" class="service-card">
+              <div class="service-image-wrapper">
+                <img
+                  src="./images/service-landscaping.jpeg"
+                  alt="Landscaping and Design"
+                />
+              </div>
+              <div class="service-card-content">
+                <h3>Landscaping & Design</h3>
+                <p>
+                  Custom landscaping and design solutions that improve the
+                  beauty, structure, and feel of your outdoor space.
+                </p>
+                <span class="service-link">View Service</span>
+              </div>
+            </a>
+
+            <a href="/pages/tree-services.html" class="service-card">
+              <div class="service-image-wrapper">
+                <img src="./images/service-tree.jpeg" alt="Tree Services" />
+              </div>
+              <div class="service-card-content">
+                <h3>Tree Services</h3>
+                <p>
+                  Professional tree trimming, removal, and stump work to keep
+                  your property safe and looking its best.
+                </p>
+                <span class="service-link">View Service</span>
+              </div>
+            </a>
+
+            <a href="/pages/lawn-maintenance.html" class="service-card">
+              <div class="service-image-wrapper">
+                <img
+                  src="./images/service-lawn.jpeg"
+                  alt="Lawn and Maintenance"
+                />
+              </div>
+              <div class="service-card-content">
+                <h3>Lawn & Maintenance</h3>
+                <p>
+                  Reliable lawn care and maintenance services to keep your yard
+                  healthy, neat, and well-managed.
+                </p>
+                <span class="service-link">View Service</span>
+              </div>
+            </a>
+
+            <a href="/pages/exterior-cleaning.html" class="service-card">
+              <div class="service-image-wrapper">
+                <img
+                  src="./images/service-cleaning.jpeg"
+                  alt="Exterior Cleaning"
+                />
+              </div>
+              <div class="service-card-content">
+                <h3>Exterior Cleaning</h3>
+                <p>
+                  Exterior cleaning services that help refresh and protect your
+                  property, including gutters and power washing.
+                </p>
+                <span class="service-link">View Service</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="reviews-container">
+          <div class="reviews-info">
+            <p class="reviews-kicker">Why Choose Us</p>
+            <h2>Trusted Outdoor Work With 5-Star Service</h2>
+            <p class="reviews-description">
+              Homeowners across Central North Carolina choose us for reliable
+              service, clean results, and attention to detail. We take pride in
+              delivering outdoor work that looks professional and lasts.
+            </p>
+
+            <div class="reviews-highlight">
+              <div class="reviews-stars" aria-label="5 star rating">
+                <span>★★★★★</span>
+              </div>
+              <p>
+                Proudly backed by <strong>5-star Google reviews</strong> from
+                clients who value quality work, clear communication, and
+                dependable service.
+              </p>
+            </div>
+
+            <ul class="reviews-points">
+              <li>Professional and dependable service</li>
+              <li>High-quality outdoor care and clean finishes</li>
+              <li>Trusted by local homeowners across Central North Carolina</li>
+            </ul>
+          </div>
+
+          <div class="reviews-slider-wrapper">
+            <div class="reviews-slider" id="reviewsSlider">
+              <article class="review-card active">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-text">
+                  Raphael did an excellent job clearing very overgrown bushes
+                  from my father's yard. He was quick, conscientious and
+                  competent. Would definitely recommend and would use him again.
+                </p>
+                <div class="review-author">
+                  <strong>Susan Bass</strong>
+                  <span>Google Review</span>
+                </div>
+              </article>
+
+              <article class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-text">
+                  Raphael did an amazing job with some massively overgrown shrub
+                  removal! Hard worker with integrity, which is very hard to
+                  find today.
+                </p>
+                <div class="review-author">
+                  <strong>Lynn Langford</strong>
+                  <span>Google Review</span>
+                </div>
+              </article>
+
+              <article class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-text">
+                  This team has great attention to detail and take a lot of
+                  pride in doing a high quality job for their customers. Price
+                  is competitive for the high quality they provide
+                </p>
+                <div class="review-author">
+                  <strong>Joshua Denis</strong>
+                  <span>Google Review</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="review-controls">
+              <button
+                class="review-btn"
+                id="reviewPrev"
+                aria-label="Previous review"
+              >
+                Previous
+              </button>
+              <div class="review-dots" id="reviewDots">
+                <button
+                  class="review-dot active"
+                  data-review="0"
+                  aria-label="Show review 1"
+                ></button>
+                <button
+                  class="review-dot"
+                  data-review="1"
+                  aria-label="Show review 2"
+                ></button>
+                <button
+                  class="review-dot"
+                  data-review="2"
+                  aria-label="Show review 3"
+                ></button>
+              </div>
+              <button
+                class="review-btn"
+                id="reviewNext"
+                aria-label="Next review"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service-area" id="service-area">
+        <div class="service-area-container">
+          <div class="service-area-heading">
+            <p class="service-area-kicker">Service Area</p>
+            <h2>Proudly Serving Central North Carolina</h2>
+            <p class="service-area-intro">
+              We provide pine straw installation and outdoor property care
+              across key areas in Central North Carolina, with service available
+              in and around Raleigh, Clayton, Apex, Pittsboro, Wake Forest,
+              Cary, Charlotte, and Greensboro.
+            </p>
+          </div>
+
+          <div class="service-area-card">
+            <div class="service-area-map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/d/u/1/embed?mid=1IwGn3NFN5yzMcmte4mbXFj8GetI5ZIE&ehbc=2E312F&noprof=1"
+                class="service-area-map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Map showing service areas in North Carolina"
+              ></iframe>
+            </div>
+
+            <div class="service-area-cities">
+              <span>Raleigh</span>
+              <span>Clayton</span>
+              <span>Apex</span>
+              <span>Pittsboro</span>
+              <span>Wake Forest</span>
+              <span>Cary</span>
+              <span>Charlotte</span>
+              <span>Greensboro</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <div class="contact-left">
+            <p class="contact-kicker">Contact Us</p>
+            <h2>Ready to Refresh Your Property?</h2>
+            <p class="contact-description">
+              Whether you need pine straw installation, landscaping, cleanup, or
+              ongoing maintenance, we’re here to help. Call today and get a
+              fast, straightforward quote.
+            </p>
+
+            <div class="contact-buttons">
+              <a href="tel:+14342654714" class="contact-btn-primary"
+                >Call Now</a
+              >
+              <a href="#services" class="contact-btn-secondary"
+                >View Services</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <span class="contact-label">Call us directly</span>
+            <a href="tel:+14342654714" class="contact-phone">
+              +1 (434) 265-4714
+            </a>
+
+            <p class="contact-note">
+              Serving Central North Carolina with reliable, professional outdoor
+              work.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="footer-logo">
+              <img
+                src="./images/Logo sin fondo.png"
+                alt="R&B Pine Straw Landscaping"
+              />
+            </a>
+            <p class="footer-description">
+              Professional pine straw installation and outdoor property care for
+              homeowners across Central North Carolina.
+            </p>
+          </div>
+
+          <div class="footer-links-group">
+            <h3>Quick Links</h3>
+            <nav class="footer-links">
+              <a href="#services">Services</a>
+              <a href="#reviews">Why Choose Us</a>
+              <a href="#service-area">Service Area</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <a href="tel:+14342654714" class="footer-phone"
+              >+1 (434) 265-4714</a
+            >
+            <p>Central North Carolina</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 R&B Pine Straw Landscaping. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
   </body>
