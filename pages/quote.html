@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Get a Quote | R&B Pine Straw Landscaping</title>
+
+    <meta
+      name="description"
+      content="Request a free quote from R&B Pine Straw Landscaping for pine straw installation, landscaping, lawn maintenance, exterior cleaning, and more across Central North Carolina."
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/quote.css?v=1" />
+    <script src="../js/mobile_menu.js?v=5" defer></script>
+    <script src="../js/i18n.js?v=5" defer></script>
+    <link rel="icon" href="../images/icono.png" type="image/png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="../index.html" class="logo">
+          <img
+            src="../images/Logo sin fondo.png"
+            alt="R&B Pine Straw Landscaping"
+          />
+        </a>
+
+        <nav class="nav-links">
+          <a href="/index.html#services" data-i18n="nav.services">Services</a>
+          <a href="/index.html#reviews" data-i18n="nav.whyChooseUs">Why Choose Us</a>
+          <a href="/index.html#service-area" data-i18n="nav.serviceArea">Service Area</a>
+          <a href="/index.html#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="lang-toggle"
+            id="langToggle"
+            type="button"
+            aria-label="Change language"
+            title="Change language"
+          >
+            <span class="fi fi-mx" id="langToggleIcon"></span>
+            <span class="lang-toggle-text" id="langToggleText">ES</span>
+          </button>
+
+          <a href="./quote.html" class="cta-btn" data-i18n="nav.cta">Get a Quote</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="/index.html#services" data-i18n="nav.services">Services</a>
+        <a href="/index.html#reviews" data-i18n="nav.whyChooseUs">Why Choose Us</a>
+        <a href="/index.html#service-area" data-i18n="nav.serviceArea">Service Area</a>
+        <a href="/index.html#contact" data-i18n="nav.contact">Contact</a>
+
+        <div class="mobile-language">
+          <button
+            class="lang-toggle mobile-lang-toggle"
+            id="mobileLangToggle"
+            type="button"
+            aria-label="Change language"
+            title="Change language"
+          >
+            <span class="fi fi-mx" id="mobileLangToggleIcon"></span>
+            <span class="lang-toggle-text" id="mobileLangToggleText">ES</span>
+          </button>
+        </div>
+
+        <a href="./quote.html" class="mobile-cta" data-i18n="nav.cta">Get a Quote</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="quote-hero">
+        <div class="quote-hero-overlay"></div>
+        <div class="quote-hero-content">
+          <p class="quote-kicker" data-i18n="quote.phill">Get a Free Estimate</p>
+          <h1 data-i18n="quote.title">Tell Us About Your Property</h1>
+          <p class="quote-hero-description" data-i18n="quote.description">
+            Send us your information and the services you need. We’ll review
+            your request and get back to you as soon as possible with a quote.
+          </p>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <div class="quote-container">
+          <div class="quote-info">
+            <p class="quote-section-kicker" data-i18n="quote.sectionKicker">
+              Request a Quote
+            </p>
+
+            <h2 data-i18n="quote.sectionTitle">Simple, Clear, and Fast</h2>
+
+            <p data-i18n="quote.sectionDescription">
+              Whether you need pine straw installation, landscaping, lawn
+              maintenance, or exterior cleaning, this form helps us understand
+              your property and prepare a better estimate.
+            </p>
+
+            <div class="quote-info-card">
+              <h3 data-i18n="quote.expectTitle">What to expect</h3>
+              <ul>
+                <li data-i18n="quote.expect1">Fast review of your request</li>
+                <li data-i18n="quote.expect2">Clear communication</li>
+                <li data-i18n="quote.expect3">Straightforward pricing</li>
+                <li data-i18n="quote.expect4">Professional outdoor service</li>
+              </ul>
+            </div>
+
+            <div class="quote-contact-box">
+              <p>
+                <strong data-i18n="quote.callLabel">Prefer to call?</strong>
+              </p>
+              <a href="tel:+14342654714" class="quote-phone">+1 (434) 265-4714</a>
+            </div>
+          </div>
+
+          <div class="quote-form-card">
+            <form
+              id="quoteForm"
+              action="./get-quote.php"
+              method="POST"
+              class="quote-form"
+            >
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="full_name" data-i18n="quote.fullNameLabel">Full Name</label>
+                  <input
+                    type="text"
+                    id="full_name"
+                    name="full_name"
+                    placeholder="Your full name"
+                    data-i18n-placeholder="quote.fullNamePlaceholder"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" data-i18n="quote.emailLabel">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    data-i18n-placeholder="quote.emailPlaceholder"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone_number" data-i18n="quote.phoneLabel">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone_number"
+                    name="phone_number"
+                    placeholder="(000) 000-0000"
+                    data-i18n-placeholder="quote.phonePlaceholder"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="zip_code" data-i18n="quote.zipLabel">Zip Code</label>
+                  <input
+                    type="text"
+                    id="zip_code"
+                    name="zip_code"
+                    placeholder="Zip code"
+                    data-i18n-placeholder="quote.zipPlaceholder"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label data-i18n="quote.servicesLabel">Services Needed</label>
+                <div class="services-grid">
+                  <label class="service-option">
+                    <input
+                      type="checkbox"
+                      name="services[]"
+                      value="Pine Straw Installation"
+                    />
+                    <span data-i18n="quote.service1">Pine Straw Installation</span>
+                  </label>
+
+                  <label class="service-option">
+                    <input
+                      type="checkbox"
+                      name="services[]"
+                      value="Landscaping Design"
+                    />
+                    <span data-i18n="quote.service2">Landscaping Design</span>
+                  </label>
+
+                  <label class="service-option">
+                    <input
+                      type="checkbox"
+                      name="services[]"
+                      value="Lawn Maintenance"
+                    />
+                    <span data-i18n="quote.service3">Lawn Maintenance</span>
+                  </label>
+
+                  <label class="service-option">
+                    <input
+                      type="checkbox"
+                      name="services[]"
+                      value="Tree Services"
+                    />
+                    <span data-i18n="quote.service4">Tree Services</span>
+                  </label>
+
+                  <label class="service-option">
+                    <input
+                      type="checkbox"
+                      name="services[]"
+                      value="Exterior Cleaning"
+                    />
+                    <span data-i18n="quote.service5">Exterior Cleaning</span>
+                  </label>
+
+                  <label class="service-option">
+                    <input type="checkbox" name="services[]" value="Other" />
+                    <span data-i18n="quote.service6">Other</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-i18n="quote.messageLabel">Describe your needs</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Tell us a little about your property, the service you need, and any details that may help us prepare your estimate."
+                  data-i18n-placeholder="quote.messagePlaceholder"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="quote-submit-btn"
+                data-i18n="quote.submitButton"
+              >
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-bottom-note">
+        <div class="quote-bottom-note-container">
+          <p data-i18n="quote.paymentNote">
+            We currently accept multiple payment methods including
+            Cash, Zelle, and Check.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="../index.html" class="footer-logo">
+              <img
+                src="../images/Logo sin fondo.png"
+                alt="R&B Pine Straw Landscaping"
+              />
+            </a>
+            <p class="footer-description" data-i18n="footer.description">
+              Professional pine straw installation and outdoor property care for
+              homeowners across Central North Carolina.
+            </p>
+          </div>
+
+          <div class="footer-links-group">
+            <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+            <nav class="footer-links">
+              <a href="../index.html#services" data-i18n="nav.services">Services</a>
+              <a href="../index.html#reviews" data-i18n="nav.whyChooseUs">Why Choose Us</a>
+              <a href="../index.html#service-area" data-i18n="nav.serviceArea">Service Area</a>
+              <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+            </nav>
+          </div>
+
+          <div class="footer-contact">
+            <h3 data-i18n="footer.contact">Contact</h3>
+            <a href="tel:+14342654714" class="footer-phone">+1 (434) 265-4714</a>
+            <p data-i18n="quote.footerArea">Central North Carolina</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p data-i18n="footer.rights">
+            © 2026 R&B Pine Straw Landscaping. All rights reserved.
+          </p>
+          <p>
+            Powered by
+            <a
+              href="https://www.google.com/search?sca_esv=d8d50d93fddf83e5&rlz=1C1VDKB_enMX1064MX1064&sxsrf=ANbL-n69E9g_s2lwBAwZNyUdVo48KbP8kQ:1773155707832&kgmid=/g/11rq99vzh2&q=Desarrolladores+web+Mexa&shem=dlvs1,shrtsdl&shndl=30&source=sh/x/loc/uni/m1/1&kgs=19af305f3f640407&utm_source=dlvs1,shrtsdl,sh/x/loc/uni/m1/1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >DesarrolladoresWebMexa</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

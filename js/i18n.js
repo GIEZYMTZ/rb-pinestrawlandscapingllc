@@ -246,6 +246,51 @@ const translations = {
         "Call today to get a straightforward quote for exterior cleaning services and safe, reliable outdoor work.",
       ctaButton: "Call Now",
     },
+
+    quote: {
+      phill: "Get a Free Estimate",
+      title: "Tell Us About Your Property",
+      description:
+        "Send us your information and the services you need. We’ll review your request and get back to you as soon as possible with a quote.",
+
+      sectionKicker: "Request a Quote",
+      sectionTitle: "Simple, Clear, and Fast",
+      sectionDescription:
+        "Whether you need pine straw installation, landscaping, lawn maintenance, or exterior cleaning, this form helps us understand your property and prepare a better estimate.",
+
+      expectTitle: "What to expect",
+      expect1: "Fast review of your request",
+      expect2: "Clear communication",
+      expect3: "Straightforward pricing",
+      expect4: "Professional outdoor service",
+
+      callLabel: "Prefer to call?",
+      fullNameLabel: "Full Name",
+      fullNamePlaceholder: "Your full name",
+      emailLabel: "Email Address",
+      emailPlaceholder: "you@example.com",
+      phoneLabel: "Phone Number",
+      phonePlaceholder: "(000) 000-0000",
+      zipLabel: "Zip Code",
+      zipPlaceholder: "Zip code",
+
+      servicesLabel: "Services Needed",
+      service1: "Pine Straw Installation",
+      service2: "Landscaping Design",
+      service3: "Lawn Maintenance",
+      service4: "Tree Services",
+      service5: "Exterior Cleaning",
+      service6: "Other",
+
+      messageLabel: "Describe your needs",
+      messagePlaceholder:
+        "Tell us a little about your property, the service you need, and any details that may help us prepare your estimate.",
+
+      submitButton: "Submit Request",
+      paymentNote:
+        "We currently accept multiple payment methods including Cash, Zelle, and Check.",
+      footerArea: "Central North Carolina",
+    },
   },
 
   es: {
@@ -498,6 +543,51 @@ const translations = {
         "Llama hoy para obtener una cotización clara y directa para servicios de limpieza exterior y trabajo confiable.",
       ctaButton: "Llamar Ahora",
     },
+
+    quote: {
+      phill: "Obtén una cotización gratis",
+      title: "Cuéntanos sobre tu propiedad",
+      description:
+        "Envíanos tu información y los servicios que necesitas. Revisaremos tu solicitud y nos pondremos en contacto contigo lo antes posible con una cotización.",
+
+      sectionKicker: "Solicita una cotización",
+      sectionTitle: "Simple, claro y rápido",
+      sectionDescription:
+        "Ya sea que necesites instalación de pine straw, paisajismo, mantenimiento de césped o limpieza exterior, este formulario nos ayuda a entender tu propiedad y preparar una mejor cotización.",
+
+      expectTitle: "Qué puedes esperar",
+      expect1: "Revisión rápida de tu solicitud",
+      expect2: "Comunicación clara",
+      expect3: "Precios directos y claros",
+      expect4: "Servicio exterior profesional",
+
+      callLabel: "¿Prefieres llamar?",
+      fullNameLabel: "Nombre completo",
+      fullNamePlaceholder: "Tu nombre completo",
+      emailLabel: "Correo electrónico",
+      emailPlaceholder: "tucorreo@ejemplo.com",
+      phoneLabel: "Número de teléfono",
+      phonePlaceholder: "(000) 000-0000",
+      zipLabel: "Código postal",
+      zipPlaceholder: "Código postal",
+
+      servicesLabel: "Servicios que necesitas",
+      service1: "Instalación de Pine Straw",
+      service2: "Paisajismo y diseño",
+      service3: "Mantenimiento de césped",
+      service4: "Servicios de árboles",
+      service5: "Limpieza exterior",
+      service6: "Otro",
+
+      messageLabel: "Describe lo que necesitas",
+      messagePlaceholder:
+        "Cuéntanos un poco sobre tu propiedad, el servicio que necesitas y cualquier detalle que nos ayude a preparar tu cotización.",
+
+      submitButton: "Enviar solicitud",
+      paymentNote:
+        "Actualmente aceptamos varios métodos de pago, incluyendo efectivo, Zelle y cheque.",
+      footerArea: "Centro de Carolina del Norte",
+    },
   },
 };
 
@@ -543,6 +633,15 @@ function applyTranslations(lang) {
 
     if (value) {
       element.textContent = value;
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.dataset.i18nPlaceholder;
+    const value = getNestedValue(translations[lang], key);
+
+    if (value) {
+      element.setAttribute("placeholder", value);
     }
   });
 
