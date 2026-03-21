@@ -191,17 +191,16 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Email configuration
-    $from = "DJ de Leon Website <MyWebSite@mywebsite.com>";
-    $to = "dj.deleons.landscaping@gmail.com";
+    $from = "NOMBRE DEL NEGOCIO <MyWebSite@DOMINIODELCLIENTE>";
+    $to = "REALIZA PRUEBAS CON TU CORREO PRIMEROg@gmail.com";
     $subject = "Cliente desea una cotización de DJ de Leon landscaping & irrigation llc";
     $headers = "From: $from\r\n";
-    $headers .= "Cc: giezy3d@gmail.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
     // Start building the HTML message
     $message = "<html><head><style> table {border-collapse: collapse;width:100%} td, th {border-bottom: 2px solid #bfc3c9; text-align: left; padding: 8px;} th {background-color: #1660a7;color: white} tr:nth-child(even) {background-color: #bfc3c9;}</style></head><body>";
-    $message .= "Revisa la información de contacto que proporcionó desde el sitio web y comunicate lo antes posible.";
+    $message .= "Revisa la información de contacto que proporcionó desde el sitio web y comunicate lo antes posible. NO REPOSNDER A ESTE CORREO";
     $message .= "<h2>Detalles de la cotización</h2>";
     $message .= "<table cellpadding='5' cellspacing='0'>";
     $message .= "<tr><th>Campo</th><th>Valor</th></tr>";
@@ -231,7 +230,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     alert('The form has been sent correctly, We will contact you as soon as possible');
     </script>";
 } else {
-    echo "<script>alert('It was not possible sending the form, you can contact us at 803-397-0449');</script>";
+    echo "<script>alert('It was not possible sending the form, you can contact us at TELEFONO DEL CLIENTE');</script>";
 }
 }
 ?>
