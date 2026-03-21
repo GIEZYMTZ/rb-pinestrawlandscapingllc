@@ -1093,15 +1093,35 @@ h2,
 }
 
 .footer-bottom {
-  padding-top: 1.25rem;
+  padding: 1.5rem 1rem 0;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-bottom p {
-  margin: 0;
-  color: hsla(0, 0%, 100%, 0.58);
-  font-size: 0.9rem;
-  line-height: 1.6;
+  margin: 0.25rem 0;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* link bonito, no el típico azul triste */
+.footer-bottom a {
+  color: #9BE15D; /* verde suave que ya va con tu fondo */
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* hover con intención */
+.footer-bottom a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(155, 225, 93, 0.5);
+}
+
+/* pequeño detalle pro */
+.footer-bottom p:first-child {
+  letter-spacing: 0.5px;
 }
 
 /* =========================================================
